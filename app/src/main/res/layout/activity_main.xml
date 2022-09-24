@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewColor"
+        android:id="@+id/seekBarRed"
+        android:max="255"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarRed"
+        android:max="255"
+        android:id="@+id/seekBarGreen"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarGreen"
+        android:max="255"
+        android:id="@+id/seekBarBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red: 0"
+        android:layout_below="@id/seekBarBlue"
+        android:textAlignment="center"
+        android:id="@+id/textViewRed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green: 0"
+        android:layout_below="@+id/textViewRed"
+        android:id="@+id/textViewGreen"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewGreen"
+        android:text="Blue: 0"
+        android:id="@+id/textViewBlue"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color Picker"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_above="@id/textViewColor"
+        android:id="@+id/frameLayout"
+/>
+
+
+
+</RelativeLayout>
